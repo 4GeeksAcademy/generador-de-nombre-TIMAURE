@@ -23,5 +23,5 @@ window.onload = function() {
   document
     .getElementById("generateDominioBtn")
     .addEventListener("click", generateDominio);
-  console.log("Generador de excusas inicializado!");
+  console.log("Generador inicializado!");
 };
