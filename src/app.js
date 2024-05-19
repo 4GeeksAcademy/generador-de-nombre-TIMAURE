@@ -16,9 +16,12 @@ window.onload = function() {
     let randomaccion = accion[Math.floor(Math.random() * accion.length)];
     let randomdonde = donde[Math.floor(Math.random() * donde.length)];
 
-    const dominio = `${randomquien}${randomaccion}${randomdonde}.Com.es`;
+    const dominio = `${randomquien}${randomaccion}${randomdonde}.com.es`;
+    for (var i = 0; i < 6; i++) {
+      console.log(dominio[i]);
+    }
     console.log(document.getElementById("dominio"));
-    document.getElementById("dominio").innerHTML = dominio;
+    document.getElementById("dominio").innerHTML = dominio[i];
   }
   document
     .getElementById("generateDominioBtn")
