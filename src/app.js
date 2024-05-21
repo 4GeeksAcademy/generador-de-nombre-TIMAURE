@@ -16,6 +16,7 @@ window.onload = function() {
 
   let extension = [".com", ".es", ".net"];
 
+  
   let domainNames = [];
 
  for (let p = 0; p < pronoun.length; p++){
@@ -26,6 +27,7 @@ window.onload = function() {
      }
     }
   }
- }
+}
+
  console.log(domainNames);
 };
