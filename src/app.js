@@ -17,8 +17,7 @@ window.onload = function() {
     let randomdonde = donde[Math.floor(Math.random() * donde.length)];
 
     const dominio = `${randomquien}${randomaccion}${randomdonde}.com.es`;
-  
-    
+
     console.log(document.getElementById("dominio"));
     document.getElementById("dominio").innerHTML = dominio;
   }
