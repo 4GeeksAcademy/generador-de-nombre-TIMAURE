@@ -7,22 +7,25 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let quien = ["auto", "perro", "gato"];
-  let accion = ["serviciodemecanica", "delasmudansas", "restaurat"];
-  let donde = ["sevilla", "madrid", "accion"];
+  
+  let pronoun = ["the", "our"];
+  
+  let adj = ["grear", "big"];
+  
+  let noun = ["sevilla", "madrid", "accion"];
 
-  function generateDominio() {
-    let randomquien = quien[Math.floor(Math.random() * quien.length)];
-    let randomaccion = accion[Math.floor(Math.random() * accion.length)];
-    let randomdonde = donde[Math.floor(Math.random() * donde.length)];
+  let extension = [".com", ".es", ".net"];
 
-    const dominio = `${randomquien}${randomaccion}${randomdonde}.com.es`;
+  let domainNames = [];
 
-    console.log(document.getElementById("dominio"));
-    document.getElementById("dominio").innerHTML = dominio;
+ for (let p = 0; p < pronoun.length; p++){
+  for (let a = 0; a < adj.length; a++){
+    for(let n = 0; n< noun.length; n++){
+     for (let e = 0; e < extension.length; e++){
+      domainNames.push(pronoun[p] + adj[a] + noun[n] + extension[e]);
+     }
+    }
   }
-  document
-    .getElementById("generateDominioBtn")
-    .addEventListener("click", generateDominio);
-  console.log("Generador inicializado!");
+ }
+ console.log(domainNames);
 };
