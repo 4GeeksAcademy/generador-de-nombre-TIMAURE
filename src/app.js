@@ -8,22 +8,22 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   
-  let pronoun = ["the", "our"];
+  let pronoun = ["el", "our"];
   
-  let adj = ["grear", "big"];
+  let adj = ["mejor", "grande"];
   
-  let noun = ["sevilla", "madrid", "accion"];
+  let noun = ["taller", "quipo", "fuerza"];
 
-  let extension = [".com", ".es", ".net"];
+  let extension = [".com", ".es", ".net", ".org", ".Ve", ".uy"];
 
   
-  let domainNames = [];
+  let nombreDeDominio = [];
 
  for (let p = 0; p < pronoun.length; p++){
   for (let a = 0; a < adj.length; a++){
     for(let n = 0; n< noun.length; n++){
      for (let e = 0; e < extension.length; e++){
-      domainNames.push(pronoun[p] + adj[a] + noun[n] + extension[e]);
+      nombreDeDominio.push(pronoun[p] + adj[a] + noun[n] + extension[e]);
      }
     }
   }
